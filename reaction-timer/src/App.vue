@@ -1,13 +1,14 @@
 <template>
 <h1>Scholar Reaction Timer</h1>
 <button @click="start">Play</button>
+
 </template>
 
 <script>
-
+import Block from './components/Block.vue'
 export default {
   name: 'App',
-  components: {  },
+  components: { Block },
   data() {
     return{
       isPlaying: false,
@@ -16,7 +17,9 @@ export default {
   },
   methods: {
     start() {
-      
+      this.delay = 2000 + Math.random() * 5000 
+      this.isPlaying = true
+      console.log(this.delay)
     }
   }
 }

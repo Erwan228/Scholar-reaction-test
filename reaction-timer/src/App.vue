@@ -1,12 +1,24 @@
 <template>
 <h1>Scholar Reaction Timer</h1>
+<button @click="start">Play</button>
 </template>
 
 <script>
 
 export default {
   name: 'App',
-  components: {  }
+  components: {  },
+  data() {
+    return{
+      isPlaying: false,
+      delay: null,
+    }
+  },
+  methods: {
+    start() {
+      
+    }
+  }
 }
 </script>
 

@@ -20,7 +20,10 @@ export default{
         }, this.delay)
     },
     updated(){
-
+        console.log('component updated')
+    },
+    unmounted(){
+        console.log('umounted')
     }
 }
 </script>

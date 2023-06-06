@@ -33,4 +33,8 @@ export default {
   color: #444;
   margin-top: 60px;
 }
+
+*{
+  user-select: none;
+}
 </style>

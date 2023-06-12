@@ -9,5 +9,7 @@ export default{
 </script>
 
 <style>
-
+p{
+    color: rebeccapurple
+}
 </style>

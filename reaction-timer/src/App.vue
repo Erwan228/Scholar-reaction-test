@@ -1,5 +1,6 @@
 <template>
 <h1>Scholar Reaction Timer</h1>
+<p>A test of your reflexes</p>
 <button @click="start" :disabled="isPlaying">Play</button>
 <Block v-if="isPlaying" :delay="delay" @end="endGame"/>
 <Resaults v-if="showResults" :score="score"/>

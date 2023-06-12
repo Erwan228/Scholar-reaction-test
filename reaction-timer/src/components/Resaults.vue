@@ -1,6 +1,6 @@
 <template>
 <p>Reaction time: {{ score }}ms</p>
-<p>{{ rank }}</p>
+<p class="rank">{{ rank }}</p>
 </template>
 
 <script>
@@ -26,7 +26,9 @@ export default{
 </script>
 
 <style scoped>
-p{
-    color: rebeccapurple
+.rank{
+    font-size: 1.em;
+    color: #0faf87;
+    font-weight: bold;
 }
 </style>
